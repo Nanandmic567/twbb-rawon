@@ -1,0 +1,378 @@
+{
+    "commands": {
+        "developers": {
+            "categoryName": "นักพัฒนา",
+            "eval": {
+                "description": "Evaluate to the bot",
+                "errorString": "ข้อผิดพลาด",
+                "noCode": "ไม่มีโค้ดที่ให้มา",
+                "inputString": "Input",
+                "outputString": "เอาท์พุต",
+                "usage": "{prefix}eval <some code>"
+            }
+        },
+        "general": {
+            "about": {
+                "aboutFooter": "{botname} - ข้อมูลบอท",
+                "botUptimeString": "เวลาที่บอททำงาน",
+                "botVersionString": "เวอร์ชั่นของบอท",
+                "cachedUsersString": "Cached Users",
+                "channelsString": "Channels",
+                "commitString": "Commit",
+                "description": "แสดงข้อมูลบอท",
+                "discordJSVersionString": "เวอร์ชั่นของ Discord.js",
+                "ffmpegVersionString": "เวอร์ชั่นของ FFmpeg",
+                "nodeVersionString": "เวอร์ชั่นของ Node.js",
+                "osUptimeString": "เวลาที่ OS ทำงาน",
+                "processUptimeString": "เวลาที่ประมวลผล",
+                "serversString": "Servers",
+                "sourceCodeString": "Source code"
+            },
+            "categoryName": "ทั่วไป",
+            "help": {
+                "aliasesString": "นามแฝง",
+                "authorString": "รายชื่อคำสั่งของพี่ใบบัว ({username})",
+                "commandDetailTitle": "{username} - ข้อมูลเกี่ยวกับคำสั่ง {command}",
+                "commandSelectionString": "กรุณาเลือกคำสั่ง",
+                "commandUsageFooter": "<> = ต้องใช้ | [] = ตัวเลือกเสริม {devOnly}",
+                "description": "แสดงรายชื่อคำสั่งหรือข้อมูลสำหรับคำสั่งเฉพาะ",
+                "descriptionString": "คำอธิบาย",
+                "footerString": "ใช้ {prefix}help <command> เพื่อรับข้อมูลเพิ่มเติมสำหรับคำสั่งเฉพาะนั้นๆ",
+                "nameString": "ชื่อ",
+                "noCommanSuggest": "เอ่อ... พี่ใบบัวหาคำสั่งที่เกี่ยวข้องไม่เจอเลยง่ะ หมายถึงอันนี้รึเปล่าอะ?",
+                "noCommand": "พี่ใบบัวหาคำสั่งที่เกี่ยวข้องไม่เจอจริงๆ ค่ะ ต้องขอโทษด้วย",
+                "slashDescription": "ชื่อของคำสั่งที่ต้องการแสดงข้อมูลเฉพาะของคำสั่งนั้น",
+                "usage": "{prefix}help [command]",
+                "usageString": "วิธีใช้คำสั่ง"
+            },
+            "invite": {
+                "clickURL": "**[คลิกเลย]({url})** เพื่อแอดพี่ใบบัวเข้าเซิฟเวอร์ของคุณ",
+                "description": "รับลิงก์คำเชิญสำหรับบอต",
+                "inviteTitle": "{bot} - ลิงก์คำเชิญ"
+            },
+            "ping": {
+                "description": "แสดง ping ปัจจุบันของบอท",
+                "footerString": "ค่าความหน่วงของ: {user}"
+            }
+        },
+        "moderation": {
+            "ban": {
+                "banFail": "ไม่สามารถ **`แบน`** ผู้ใช้นี้ได้ เนื่องจาก: `{message}`",
+                "banSuccess": "ทำการ **`แบน`** ผู้ใช้ **{user}** นี้ออกจากเซิฟเวอร์แล้วค่ะ",
+                "bannedByString": "แบนผู้ใช้โดย: {author}",
+                "botNoPermission": "ขอโทษนะ แต่พี่ยังไม่มีสิทธ์ **`แบนผู้ใช้`** เลยอะ",
+                "description": "แบนผู้ใช้ออกจากเซิฟเวอร์นี้",
+                "slashMemberIDDescription": "จะแบนใครคะ?",
+                "slashReasonDescription": "สาเหตุการแบน",
+                "usage": "{prefix}ban <@mention | id> [reason]",
+                "userBanned": "คุณพี่ **`ถูกแบน`** ออกจาก **{guildName}** แล้ว... แต่พี่บัวไม่ได้โกรธหรอกนะ เพราะว่าเรื่องทุกอย่างเดี๋ยวมันก็จบแล้ว.. สู้ๆ นะ^^",
+                "userNoBannable": "ขอโทษนะน้อง แต่พี่ **`แบน`** สมาชิกคนนั้นไม่ได้จริงๆ",
+                "userNoPermission": "ขอประธานอภัยจริงๆ แต่ว่าคุณน้องยังไม่มีสิทธ์ **`แบนผู้ใช้`** สำหรับคำสั่งนี้เลยค่ะ"
+            },
+            "categoryName": "ผู้ดูแล",
+            "common": {
+                "noReasonString": "[Not specified]",
+                "noUserSpecified": "กรุณาระบุด้วยค่ะ",
+                "reasonString": "**Reason**"
+            },
+            "infractions": {
+                "description": "แสดงการละเมิดของผู้ใช้",
+                "embedAuthorText": "{user} - การละเมิด",
+                "noInfractions": "ไม่มีการละเมิดใดๆ เลยค่ะ",
+                "slashMemberDescription": "คุณน้องอยากเห็นข้อมูลการละเมิดของใครบ้างคะ?",
+                "usage": "{prefix}infractions [@mention | id]"
+            },
+            "kick": {
+                "botNoPermission": "ขอโทษนะ แต่พี่ยังไม่มีสิทธ์ **`เตะผู้ใช้`** เลยอะ",
+                "description": "เตะผู้ใช้ออกจากเซิฟเวอร์นี้",
+                "kickFail": "ไม่สามารถ **`เตะ`** ผู้ใช้นี้ได้ เนื่องจาก: `{message}`",
+                "kickSuccess": "ทำการ **`เตะ`** ผู้ใช้ **{user}** นี้ออกจากเซิฟเวอร์แล้วนะคะ",
+                "kickedByString": "เตะผู้ใช้โดย: {author}",
+                "slashMemberDescription": "จะ Kick ใครคะ?",
+                "slashReasonDescription": "สาเหตุการเตะ",
+                "usage": "{prefix}kick <@mention | id> [reason]",
+                "userKicked": "คุณพี่โดน **`เตะ`** ออกจาก **{guildName}** นะ",
+                "userNoKickable": "โทษทีนะ แต่พี่ใบบัว **`เตะ`** คนนี้ออกไม่ได้อ่าา",
+                "userNoPermission": "โทษที แต่น้องยังไม่มีสิทธิที่จะ **`เตะผู้ใช้`** ได้นะ..."
+            },
+            "modlogs": {
+                "channel": {
+                    "current": "ช่องปัจจุบันสำหรับบันทึกของผู้ดูแล: <#{channel}>",
+                    "invalid": "ช่องไม่ถูกต้อง ต้องใช้ช่องข้อความเท่านั้นนะคะ",
+                    "noChannel": "ยังไม่ได้ตั้งค่าช่องสำหรับบันทึกของผู้ดูแลเลยค่ะ",
+                    "success": "ช่องสำหรับบันทึกของผู้ดูแลได้ถูกตั้งค่าให้เป็น <#{channel}> แล้วค่ะ"
+                },
+                "description": "เปลี่ยนการตั้งค่าบันทึกของผู้ดูแล",
+                "disable": "**`ปิดใช้งาน`** ฟีเจอร์บันทึกของผู้ดูแลแล้วค่ะ",
+                "embedTitle": "Moderation Logs",
+                "enable": "**`เปิดใช้งาน`** ฟีเจอร์บันทึกของผู้ดูแลแล้วค่ะ",
+                "newChannelText": "ช่องใหม่",
+                "slashChannelDescription": "ดูหรือเปลี่ยนช่องสำหรับบันทึกของผู้ดูแล",
+                "slashChannelNewChannelOption": "สร้างช่องสำหรับบันทึกของผู้ดูแล",
+                "slashDisableDescription": "ปิดใช้งานฟีเจอร์บันทึกของผู้ดูแล",
+                "slashEnableDescription": "เปิดใช้งานฟีเจอร์บันทึกของผู้ดูแล",
+                "usage": "{prefix}modlogs"
+            },
+            "mute": {
+                "alreadyMuted": "ผู้ใช้คนนั้นได้ **`ปิดเสียง`** เรียบร้อยแล้วค่ะ",
+                "botNoPermission": "ตอนนี้พี่ใบบัวยังไม่มีสิทธิ **`จัดการบทบาท`** เลยอ่าาาา",
+                "cantMuteOwner": "คุณไม่มีสิทธิที่จะ **`ปิดเสียง`** เจ้าของเซิฟเวอร์ได้นะคะ.. บอกไว้ก่อน",
+                "description": "ปิดเสียงผู้ใช้ในเซิฟเวอร์",
+                "muteFail": "ไม่สามารถ **`ปิดเสียง`** ผู้ใช้นี้ได้ เนื่องจาก: `{message}`",
+                "muteSuccess": "ทำการ **`ปิดเสียง`** ผู้ใช้ **{user}** คนนี้ในเซิฟเวอร์แล้วนะคะ",
+                "mutedByString": "ปิดเสียงผู้ใช้โดย: {author}",
+                "noRole": "Mute role hasn't been set, please set it with `{prefix}setmute`",
+                "slashMemberDescription": "จะปิดเสียงใครดีคะ?",
+                "slashReasonDescription": "สาเหตุที่ต้องปิดเสียง",
+                "usage": "{prefix}mute <@mention | id> [reason]",
+                "userMuted": "คุณน้องถูก **`ปิดเสียง`** บน **{guildName}** นะคะ",
+                "userNoPermission": "โทษนะ แต่... น้องยังไม่มีสิทธิ์ **`จัดการบทบาท`** สำหรับคำสั่งนี้เลยนะ"
+            },
+            "purge": {
+                "botNoPermission": "สุมาเต๊อะด้วยเจ้า เปิ้นบ่มีสิทธิ **`จัดการข้อความ`** เลยเจ้า",
+                "description": "ลบข้อความ",
+                "invalidAmount": "กรุณาระบุจำนวนข้อความที่จะลบด้วยค่ะ",
+                "purgeFail": "ไม่สามารถ **`ล้าง`** ข้อความได้ เนื่องจาก: `{message}`",
+                "purgeSuccess": "{amount, plural, one {**`1`** message} other {**`#`** messages}} have been **`PURGED`**",
+                "slashAmountDescription": "จำนวนข้อความที่จะลบ",
+                "usage": "{prefix}purge <amount>",
+                "userNoPermission": "โทษนะ ยูยังไม่มีสิทธิ **`จัดการข้อความ`** กับคำสั่งนี้เลยนะคะ"
+            },
+            "setmute": {
+                "description": "สร้าง role ปิดเสียง",
+                "invalidRole": "บทบาทไม่ถูกต้อง",
+                "slashRoleDescription": "role ที่ใช้สำหรับปิดเสียง",
+                "success": "role ปิดเสียงได้ตั้งค่าให้กับ <@&{role}> แล้วค่ะ",
+                "usage": "{prefix}setmute <role>"
+            },
+            "unban": {
+                "alreadyUnban": "ผู้ใช้คนนั้นไม่ได้ถูก **`แบน`** แล้วนะคะ..",
+                "description": "ปลดแบนผู้ใช้จากเซิฟเวอร์",
+                "slashMemberDescription": "จะปลดแบนใครดีคะ?",
+                "slashReasonDescription": "สาเหตุที่ต้องปลดแบน",
+                "ubanSuccess": "ทำการ **`ปลดแบน`** **{user}** จากเซิฟเวอร์แล้วค่ะ",
+                "unbanFail": "ไม่สามารถ **`ปลดแบน`** ผู้ใช้นี้ได้ เนื่องจาก: `{message}`",
+                "unbannedByString": "ปลดแบนโดย: {author}",
+                "usage": "{prefix}unban <id> [reason]"
+            },
+            "unmute": {
+                "description": "เลิกปิดเสียง (คืนไมค์) ผู้ใช้ในเซิฟเวอร์",
+                "noMuted": "ผู้ใช้คนนั้นไม่ได้ **`ปิดเสียง`** ไว้นะคะ",
+                "slashMemberDescription": "อยากจะให้พี่คืนไมค์ใครคะ?",
+                "slashReasonDescription": "สาเหตุที่คืนไมค์",
+                "unmuteFail": "ไม่สามารถ **`คืนไมค์`** ให้กับผู้ใช้นี้ได้ เนื่องจาก: `{message}`",
+                "unmuteSuccess": "ทำการ **`คืนไมค์`** ให้ **{user}** ในเซิฟเวอร์แล้วค่ะ",
+                "unmutedByString": "คืนไมค์โดย: {author}",
+                "usage": "{prefix}unmute <@mention | id> [reason]",
+                "userUnmuted": "คุณพี่ได้ **`ไมค์`** กลับคืนมาบน **{guildName}** แล้วค่ะ!"
+            },
+            "warn": {
+                "description": "เตือนผู้ใช้ในเซิฟเวอร์นี้",
+                "noDM": "ไม่สามารถสร้าง DM ผู้ใช้คนนั้นได้ แต่พี่ใบบัวจะขอลองดูอีกทีนึงนะ...",
+                "slashMemberDescription": "อยากให้พี่ใบบัวเตือนใครคะ?",
+                "slashReasonDescription": "สาเหตุที่เตือน",
+                "usage": "{prefix}warn <@mention | id> [reason]",
+                "userNoPermission": "โทษทีจ้ะ น้องยังไม่มีสิทธิ์ **`MANAGE SERVER`** เลยจ้า",
+                "userWarned": "คุณน้องถูก **`เตือน`** บน **{guildName}** นะคะ",
+                "warnSuccess": "**{user}** ได้โดน **`เตือน`** บนเซิฟฯ แล้วนะคะ..",
+                "warnedByString": "เตือนโดย: {author}"
+            }
+        },
+        "music": {
+            "categoryName": "เพลง",
+            "dj": {
+                "description": "เปลี่ยนการตั้งค่าฟีเจอร์ DJ",
+                "disable": "ปิดใช้งาน",
+                "disableText": "**`ปิดใช้งาน`** ฟีเจอร์ DJ แล้วค่ะ",
+                "embedTitle": "DJ feature",
+                "enable": "เปิดใช้งาน",
+                "enableText": "**`เปิดใช้งาน`** ฟีเจอร์ DJ แล้วค่ะ",
+                "newRoleText": "บทบาทใหม่",
+                "role": {
+                    "current": "บทบาท DJ ปัจจุบัน: <@&{role}>",
+                    "invalid": "บทบาทไม่ถูกต้องค่ะ",
+                    "noRole": "ยังไม่ได้ตั้งค่าฟีเจอร์ DJ เลยอะ เราต้องไปตั้งบทบาทด้วยคำสั่ง `{prefix}dj role` ก่อนนะ",
+                    "success": "บทบาท DJ ถูกตั้งค่าโดยใช้บทบาท <@&{role}> แล้วจ้า"
+                },
+                "slashDisableDescription": "ปิดใช้งานฟีเจอร์ DJ",
+                "slashEnableDescription": "เปิดใช้งานฟีเจอร์ DJ",
+                "slashRoleDescription": "ดูหรือเปลี่ยนบทบาท DJ",
+                "slashRoleNewRoleOption": "สร้างบทบาทใหม่ให้กับ DJ"
+            },
+            "filter": {
+                "availableFilters": "Available Filters",
+                "currentlyUsedFilters": "Currently Used Filters",
+                "currentState": "`{filter}` is currently `{state}`",
+                "description": "Configure song filter",
+                "embedFooter": "To {opstate} the filter, use {prefix}filter {opstate} {filter}",
+                "filterSet": "`{filter}` filter is now `{state}`",
+                "slashStateDescription": "{state, select, enable {Enable} other {Disable}} a song filter",
+                "slashStateFilterDescription": "The song filter that will be {state, select, enable {enabled} other {disabled}}",
+                "slashStatusDescription": "Check the current status of song filters",
+                "slashStatusFilterDescription": "The song filter that you want to check",
+                "specifyFilter": "Please specify the song filter"
+            },
+            "lyrics": {
+                "apiError": "API ไม่พบชื่อเพลงนี้ **{song}** เนื่องจาก: `{message}`",
+                "description": "แสดงเนื้อเพลงนี้",
+                "noQuery": "ยังไม่มีเพลงที่กำลังเล่นอยู่เลยนะคะ",
+                "slashDescription": "ชื่อเพลงที่ต้องการค้นหา",
+                "usage": "{prefix}lyrics [song]"
+            },
+            "nowplaying": {
+                "description": "แสดงสถานะของตัวเล่นสื่อ",
+                "disableButton": "ปุ่มย้อนกลับไม่ทำงานและถูกนำออกไปแล้วค่ะ",
+                "emptyQueue": "ขณะนี้ยังไม่มีคิวเลยค่ะ"
+            },
+            "pause": {
+                "alreadyPause": "ตัวเล่นสื่อยังพักอยู่จ้า",
+                "description": "พักตัวเล่นสื่อ",
+                "pauseMessage": "ทำการพักตัวเล่นสื่อแล้วค่ะ"
+            },
+            "play": {
+                "alreadyPlaying": "ขณะนี้ตัวเล่นสื่อกำลังเล่นเพลงอยู่ในช่องเสียง **`{voiceChannel}`** นะคะ",
+                "description": "เล่นเพลง",
+                "noSongData": "URL นี้ไม่มีข้อมูลเพลงเลยนะคะ..",
+                "slashQueryDescription": "Query to search",
+                "usage": "{prefix}play <query | url>"
+            },
+            "queue": {
+                "description": "Show the queue list"
+            },
+            "remove": {
+                "description": "ลบเพลงออกจากคิว",
+                "noPermission": "คุณไม่มีสิทธิ์ที่จะใช้คำสั่งนี้ค่ะ..",
+                "noPositions": "กรุณาระบุลำดับของเพลงที่จะลบด้วยค่ะ..",
+                "slashPositionsDescription": "สามารถลบหลายๆ เพลงโดยใช้เคื่องหมาย comma หรือเว้นวรรค",
+                "songSkip": "เพลงปัจจุบันได้นำออกแล้วค่ะ... ข้ามเพลงงงงง!!!\n\n",
+                "songsRemoved": "Removed {removed, plural, one {1 song} other {# songs}} from the queue",
+                "usage": "{prefix}remove <positions>"
+            },
+            "repeat": {
+                "actualMode": "โหมดเล่นซ้ำที่ใช้อยู่ในขณะนี้คือ **`{mode}`**",
+                "description": "Repeat current music or the queue",
+                "footer": "To change mode, see {prefix}help repeat",
+                "newMode": "The repeat mode has been set to **`{mode}`**",
+                "slashDisable": "Disable repeat mode",
+                "slashQueue": "Set repeat mode to **`QUEUE`**",
+                "slashSong": "Set repeat mode to **`SONG`**",
+                "usage": "'{prefix}'repeat <{options}>"
+            },
+            "resume": {
+                "alreadyResume": "ฮัลโหลกด pause เพลงไม่ได้อ่ะ",
+                "description": "Resume the music player",
+                "resumeMessage": "The music player has been resumed."
+            },
+            "search": {
+                "cancelMessage": "พิมพ์ {cancel} หรือ c (เป็นภาษาอังกฤษ) เพื่อยกเลิกการเลือกเพลง",
+                "canceledMessage": "การเลือกเพลงได้ถูกยกเลิกแล้วค่ะ",
+                "description": "เล่นเพลงโดยใช้คิวที่กำหนดไว้",
+                "interactionContent": "ลองเลือกมาสักเพลงนึงก่อนนะ..",
+                "interactionPlaceholder": "ลองเลือกมาสักเพลงนึงก่อนนะ..",
+                "noQuery": "Please provide some query to search.",
+                "noSelection": "No or invalid value entered, music selection canceled.",
+                "noTracks": "I can't obtain any search results.",
+                "queueEmbed": "เลือกสักเพลงหน่อยมั้ยคะ?; คุณน้องสามารถเลือกได้มากกว่า 1 เพลงโดยการเคาะ space 1 รอบหรือใช้ตัว {separator} ก็ได้\n",
+                "slashDescription": "ค้นหาเพลงที่ต้องการ",
+                "slashQueryDescription": "Query ที่ต้องการค้นหา",
+                "slashSourceDescription": "กรุณาเลือกแหล่งที่มาของเพลงค่ะ...",
+                "trackSelectionMessage": "เลือกเพลง",
+                "usage": "{prefix}search <query> [source]"
+            },
+            "shuffle": {
+                "actualState": "Current shuffle mode is **`{state}`**",
+                "description": "เปิดโหมดสุ่ม",
+                "newState": "Shuffle mode is now set to **`{state}`**"
+            },
+            "skip": {
+                "description": "ข้ามเพลง",
+                "skipMessage": "ข้ามเพลง **{song}** แล้วจ้า",
+                "voteResultMessage": "{length}/{required} voted to skip the current song"
+            },
+            "skipTo": {
+                "cantPlay": "เฮ้ยๆ ข้ามเพลงนี้ไม่ได้นะ",
+                "description": "Skip to specific position in the queue",
+                "noPermission": "You don't have permission to use this command.",
+                "noSongPosition": "Unable to find a song in that position.",
+                "skipMessage": "Skipped to **{song}**",
+                "slashFirstDescription": "Rewind to the first song in the queue",
+                "slashLastDescription": "Skip to the last song in the queue",
+                "slashPositionDescription": "Song position in the queue",
+                "slashSpecificDescription": "Skip to a specific position in the queue",
+                "usage": "'{prefix}'skipto <{options} | number>"
+            },
+            "stayInQueue": {
+                "247Disabled": "Stay-in-voice command is disabled.",
+                "actualState": "Stay-in-voice is **`{state}`**",
+                "description": "Makes the bot stay in the voice channel when the queue has ended",
+                "newState": "Stay-in-voice is now set to **`{state}`**",
+                "slashDescription": "Turns mode for stay-in-voice feature"
+            },
+            "stop": {
+                "description": "หยุดตัวเล่นสื่อ",
+                "stoppedMessage": "The music player has been stopped."
+            },
+            "volume": {
+                "changeVolume": "To change the volume, provide volume number when using this command.",
+                "currentVolume": "The current volume is **`{volume}`**",
+                "description": "Change the media player volume",
+                "newVolume": "Volume has been set to **`{volume}`**",
+                "plsPause": "Please pause the music instead of setting the volume to **`{volume}`**",
+                "slashDescription": "New volume",
+                "usage": "{prefix}volume [new volume]",
+                "volumeLimit": "I can't set the volume above **`{maxVol}`**"
+            }
+        }
+    },
+    "events": {
+        "channelUpdate": {
+            "connectionReconfigured": "Connection successfully re-configured.",
+            "reconfigureConnection": "Voice channel region changed, re-configuring connection...",
+            "unableReconfigureConnection": "Unable to re-configure connection, the queue has been deleted."
+        },
+        "createInteraction": {
+            "message1": "Sorry, but that interaction is only for <@{user}> and the server staff.",
+            "message2": "Sorry, but that interaction is only for <@{user}>"
+        },
+        "createMessage": "หวัดดีค่าา {author} prefix ของน้องคือ **`{prefix}`** นะคะ^^",
+        "cmdLoading": "Loading...",
+        "voiceStateUpdate": {
+            "connectionReconfigured": "การเชื่อมต่อถูกตั้งค่าใหม่แล้วจ้าาา",
+            "deleteQueue": "ผ่านไปแล้ว **`{duration}`** แต่ยังไม่มีใครแวะเข้ามาในช่อง VC เลย... งั้นพี่ใบบัวขอลบคิวทิ้งนะ",
+            "deleteQueueFooter": "ลบคิวแล้วนะคะ...",
+            "disconnectFromVCMessage": "Disconnected from the voice channel, the queue has been deleted.",
+            "joinStageMessage": "Successfully joined the stage channel as Speaker.",
+            "joiningAsSpeaker": "Moved to the stage channel, trying to join as Speaker...",
+            "pauseQueue": "ทุกคนในช่อง VC เริ่มทยอยออกไปกันหมดแล้ว เพื่อเป็นการเซฟทรัพยากร คิวจะหยุดทันทีค่ะ\nแต่ถ้าไม่มีใครเข้าช่อง VC เลย คิวทั้งหมดจะถูกลบภายใน **`{duration}`** นะคะ",
+            "pauseQueueFooter": "พักคิวจ้ะ",
+            "reconfigureConnection": "Moved to a voice channel with a different region, re-configuring connection...",
+            "resumeQueue": "เห๊ะ? มีคนเข้า VC แล้วนิ..\nResuming **{song}**",
+            "resumeQueueFooter": "เล่นคิวต่อจ้ะ",
+            "unableJoinStageMessage": "พี่ใบบัวเป็น Speaker ให้ไม่ได้ว่ะ.. งั้นลบออกนะ",
+            "unableReconfigureConnection": "ทุกอย่างมั่วไปหมดเลยว่ะ งั้นลบออกก็ด้ะ.."
+        }
+    },
+    "reusable": {
+        "invalidUsage": "โทษนะ แต่แบบนี้ใช้ไม่ถูกนะลูก ถ้าสงสัยก็ให้ดู **`{prefix} {name}`** เลยก็ได้",
+        "pageFooter": "หน้าที่ {actual} จาก {total}"
+    },
+    "utils": {
+        "cooldownMessage": "คุณ {author} คะ... รออีก **`{timeleft}`** นะคะ ตอนนี้ cooldown อยู่",
+        "generalHandler": {
+            "errorJoining": "พี่ใบบัวเข้าช่องเสียงไม่ได้ง่าาาาา อาจจะเป็นเพราะว่า: `{message}`",
+            "errorPlaying": "พี่ใบบัวเปิดเพลงไม่ได้อ่าา แง~~: `{message}`",
+            "handleVideoInitial": "เพิ่ม {length} เพลงเข้าไปในคิวแล้วค่าา",
+            "leftVC": "พี่ใบบัวไปละ inactive เยอะเกิน..",
+            "queueEnded": "คิวจบแล้ว อย่าลืมใช้คำลั่ง **`{usage}`** ถ้าอยากเพิ่มเพลงอะนะ",
+            "startPlaying": "กำลังเล่น **{song}**",
+            "stopPlaying": "กำลังหยุด **{song}**"
+        },
+        "musicDecorator": {
+            "noInVC": "คุณพี่ต้องอยู่ในช่องเสียงก่อนนะคะ... ถึงจะเปิดเพลงได้",
+            "noQueue": "ยังไม่มีเพลงเลยค่ะ",
+            "sameVC": "คุณพี่ต้องอยู่ในช่องเสียงที่พี่ใบบัวอยู่นะคะ..",
+            "validVCJoinable": "'ทานโทษนะ แต่**พี่ใบบัวเชื่อมเข้าไปไม่ได้ว่ะ** ลองเช็คสิทธิ์เข้าถึงพี่ก่อนนะ",
+            "validVCPermission": "ทานโทษนะ แต่**พี่ใบบัวคุยไม่ได้ว่ะ** ลองเช็คสิทธิ์เข้าถึงพี่ก่อนนะ"
+        }
+    }
+}
